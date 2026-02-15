@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Short articles about modern web development and tools.">
+    <title>Tech Notes — Web Dev Articles</title>
+</head>
+<body>
+    <header>
+        <a href="#main" aria-label="skip to main content">skip to main content</a>
+        <div>
+            <h1>ALAA HAMADA</h1>
+            <p>Front-End developer</p>
+            <p>I build accessible, semantic, and responsive web interfaces.</p>
+        </div>
+        <nav aria-label="primary navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="about" aria-labelledby="about-title">
+            <h2>About</h2>
+            <p>I am a web developer who focuses on clean structure, accessibility, and user-friendly experiences.
+        I enjoy turning ideas into simple, well-organized web pages using semantic HTML and modern best practices.
+            </p>
+            <ul>
+                <li><strong>Location:</strong>damascus,syria</li>
+                <li><strong>Languages:</strong>English,Arabic</li>
+                <li><strong>Interests:</strong>Ui design,Accessibility,Performance</li>
+            </ul>
+
+        </section>
+
+        <section id="skiils" aria-labelledby="skiils-title">
+            <h2>Skiils</h2>
+
+            <section aria-labelledby="skiils-frontend">
+                <h3>Front-End</h3>
+                <ul>
+                    <li>Semantic HTML</li>
+                    <li>CSS fundamentals (layout, responsive design)</li>
+                    <li>JavaScript basics (DOM, events)</li>
+                </ul>
+            </section>
+        
+        <section aria-labelledby="skiils-tools">
+            <h3>Tools</h3>
+            <ul>
+                <li>Git&Github</li>
+                <li>Vs code</li>
+                <li>Browser DevTools</li>
+            </ul>
+        </section>
+        <section aria-labelledby="skiils-quality">
+            <h3>Qulity Focus</h3>
+            <ul>
+          <li>Accessibility basics (labels, keyboard support)</li>
+          <li>SEO-friendly structure (headings, landmarks)</li>
+          <li>Clean readable code</li>
+        </ul>
+        </section>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-title">
+            <h2>Projects</h2>
+            <article aria-labelledby="proj-1-title">
+                <h3>project 1: Landing Page</h3>
+                <p>A simple landing page focusing on semantic structure, headings hierarchy, and clean layout sections.</p>
+                <h4>Key Features</h4>
+                <ul>
+          <li>Semantic layout: header, main, sections, footer</li>
+          <li>Accessible navigation and content structure</li>
+                </ul>
+                <p>
+          <a href="#" aria-label="View Project 1 repository">View Repository</a>
+        </p>
+        <figure>
+            <img src="https://via.placeholder.com/640x360" alt="A screenshot illustrating Vite build output." />
+            <figcaption>Vite: fast dev server and build tooling.</figcaption>
+        </figure>
+
+            </article>
+            
+            <article aria-labelledby="proj-2-title">
+                <h3>Project 2 :Menu Page</h3>
+                <p>
+          A multi-category menu page with proper sectioning and articles for items, designed to be easy to scan.
+            </p>
+            <h4>Key Features</h4>
+            <ul>
+                <li>Clear categories using sections</li>
+                <li>Independent items using articles</li>
+            </ul>
+            <p>
+                <a href="#" aria-label="View Project 2 repository">View Repository</a>
+            </p>
+            </article>
+
+            <article aria-labelledby="proj-3-title">
+                <h3 id="proj-3-title">Project 3: Contact Form Demo</h3>
+            <p>
+                A form demo emphasizing accessibility: correct labels, helpful instructions, and proper input types.
+            </p>
+                <h4>Key Features</h4>
+            <ul>
+                <li>Labels linked to inputs</li>
+                <li>Input types: email, text, textarea</li>
+            </ul>
+            <p>
+                <a href="#" aria-label="View Project 3 repository">View Repository</a>
+            </p>
+        </article>
+            
+        <form action="#" method="post" aria-describedby="contact-help">
+        <p id="contact-help">
+          Please provide your name, email, and message. I will reply as soon as possible.
+        </p>
+
+        <div>
+          <label for="full-name">Full name *</label>
+          <input id="full-name" name="fullName" type="text" autocomplete="name" required />
+        </div>
+
+        <div>
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+
+        <div>
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="">Select a topic</option>
+            <option value="job">Job opportunity</option>
+            <option value="project">Project collaboration</option>
+            <option value="question">Question</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <div>
+          <input id="consent" name="consent" type="checkbox" required />
+          <label for="consent">I agree to be contacted back using my email.</label>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
+        </section>
+
+        <footer>
+    <p>&copy; <time datetime="2026">2026</time> Your Name. All rights reserved.</p>
+
+    <nav aria-label="Footer links">
+      <ul>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="mailto:you@example.com">Email</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+
+    </main>
+
+</body>
+</html>
