@@ -3,53 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog — Frontend Mastery</title>
 </head>
 <body>
     <header>
         <h1>Tech Notes</h1>
         <p>Short articles about web dev & tools</p>
-    </header>
-    <nav>
+    
+    <nav aria-label="Primary">
         <ul>
-            <li>Home</li>
-            <li>Articles</li>
-            <li>Tutorials</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="forms-practice.html">Forms</a></li>
         </ul>
     </nav>
+
+    </header>
     <main>
         <section aria-label="blog posts">
             <article>
                 <h2>Why I switched to Vite in 2026</h2>
-                <time datetime="">2026-02-11</time>
+                <time datetime="2026-02-11">February 11, 2026</time>
                 <p>sadvco kremvokk  ermokmv erg o mveo mgov omvo vm4o </p>
                 <a href="">read more</a>
                 <figure>
-                    <img src="assets/pie.webp" alt="pizza"
+                    <img src="assets/q1.jpg" alt="HTML5 logo representing modern web markup language""
                     width="300px"
                     height="200px"
                     loading="lazy">
                     <figcaption>
-                        This is Pizza
+                        Semantic HTML improves accessibility and SEO.
                     </figcaption>
                 </figure>
             </article>
 
             <article>
                 <h2>CSS Grid patterns for dashboards</h2>
-                <time datetime="2026-02-12"></time>
+                <time datetime="2026-02-12">February 11, 2026</time>
                 <p>das fwe fer f ergfr e erger g ger regerg ge erggre </p>
                 <a href="">read more</a>
                 <figure>
-                    <img src="assets/pie.webp"
-                    alt="pizza"
+                    <img src="assets/q2.png"
+                    alt="CSS3 logo representing modern web styling"
                     width="300px"
                     height="200px"
                     loading="lazy">
                     <figcaption>
-                        This is pizza
+                        CSS Grid enables structured dashboard layouts.
                     </figcaption> 
                 </figure>
             </article>
@@ -114,10 +115,17 @@
                 <li><a href="">react</a></li>
             </ul>
             <form action="">
-                <input type="text">
-                <button>ok</button>
+                <label for="newsletter-email">Email</label>
+                <input id="newsletter-email" type="email" required>
+                <button type="submit">Subscribe</button>
+
             </form>
         </aside>
+        
+        <footer>
+            <p>© 2026 Frontend Mastery. Built by Alaa Hamada.</p>
+        </footer>
+
     </main>
 </body>
 </html>
