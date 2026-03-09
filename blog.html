@@ -1,131 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog — Frontend Mastery</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Frontend Mastery</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header>
-        <h1>Tech Notes</h1>
-        <p>Short articles about web dev & tools</p>
-    
+  <a href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>Tech Notes</h1>
+    <p>Short articles about web dev &amp; tools</p>
+
     <nav aria-label="Primary">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="forms-practice.html">Forms</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="forms-practice.html">Forms</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+      </ul>
     </nav>
+  </header>
 
-    </header>
-    <main>
-        <section aria-label="blog posts">
-            <article>
-                <h2>Why I switched to Vite in 2026</h2>
-                <time datetime="2026-02-11">February 11, 2026</time>
-                <p>sadvco kremvokk  ermokmv erg o mveo mgov omvo vm4o </p>
-                <a href="">read more</a>
-                <figure>
-                    <img src="assets/q1.jpg" alt="HTML5 logo representing modern web markup language""
-                    width="300px"
-                    height="200px"
-                    loading="lazy">
-                    <figcaption>
-                        Semantic HTML improves accessibility and SEO.
-                    </figcaption>
-                </figure>
-            </article>
+  <main id="main-content">
 
-            <article>
-                <h2>CSS Grid patterns for dashboards</h2>
-                <time datetime="2026-02-12">February 11, 2026</time>
-                <p>das fwe fer f ergfr e erger g ger regerg ge erggre </p>
-                <a href="">read more</a>
-                <figure>
-                    <img src="assets/q2.png"
-                    alt="CSS3 logo representing modern web styling"
-                    width="300px"
-                    height="200px"
-                    loading="lazy">
-                    <figcaption>
-                        CSS Grid enables structured dashboard layouts.
-                    </figcaption> 
-                </figure>
-            </article>
-        </section>
-        <section aria-labelledby="popular-posts-title">
-            <h2 id="popular-posts-title">Popular Posts</h2>
+    <!-- Layout: posts + sidebar -->
+    <div class="layout">
 
-            <ol>
-                <li>
-                    <a href="#">Building Accessible Forms in HTML</a>
-                </li>
-                <li>
-                    <a href="#">Modern CSS Layout with Grid and Flexbox</a>
-                </li>
-                <li>
-                    <a href="#">Understanding JavaScript Event Delegation</a>
-                </li>
-            </ol>
-        </section>
-        <section aria-labelledby="upcoming-topics-title">
-            <h2 id="upcoming-topics-title">Upcoming Topics</h2>
+      <section class="posts" aria-label="Blog posts">
+        <article>
+          <h2>Why I switched to Vite in 2026</h2>
+          <p><time datetime="2026-3-9">March 9, 2026</time></p>
 
-            <table border="1">
-                <caption>Frontend Learning Roadmap – Next Articles</caption>
+          <p>sadvco kremvokk ermokmv erg o mveo mgov omvo vm4o</p>
 
-                <thead>
-                    <tr>
-                        <th scope="col">Week</th>
-                        <th scope="col">Topic</th>
-                        <th scope="col">Focus Area</th>
-                    </tr>
-                </thead>
+          <p>
+            <a href="#">Read more: Why I switched to Vite in 2026</a>
+          </p>
 
-                 <tbody>
-                    <tr>
-                        <th scope="row">Week 4</th>
-                        <td>Responsive Design Patterns</td>
-                        <td>Mobile-first layouts</td>
-                    </tr>
+          <figure>
+            <img
+              src="assets/q1.jpg"
+              alt="HTML5 logo representing modern web markup language"
+              width="300"
+              height="200"
+              loading="lazy"
+            />
+            <figcaption>Semantic HTML improves accessibility and SEO.</figcaption>
+          </figure>
+        </article>
 
-                    <tr>
-                        <th scope="row">Week 5</th>
-                        <td>Advanced JavaScript Functions</td>
-                        <td>Closures & Scope</td>
-                    </tr>
+        <article>
+          <h2>CSS Grid patterns for dashboards</h2>
+          <p><time datetime="2026-3-9">March 9, 2026</time></p>
 
-                    <tr>
-                        <th scope="row">Week 6</th>
-                        <td>Intro to React</td>
-                        <td>Components & State</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+          <p>das fwe fer f ergfr e erger g ger regerg ge erggre</p>
 
-        <aside>
-            <h3>About the author</h3>
-            <ul>
-                <li><a href="">html</a></li>
-                <li> <a href="">css</a></li>
-                <li><a href="">js</a></li>
-                <li><a href="">react</a></li>
-            </ul>
-            <form action="">
-                <label for="newsletter-email">Email</label>
-                <input id="newsletter-email" type="email" required>
-                <button type="submit">Subscribe</button>
+          <p>
+            <a href="#">Read more: CSS Grid patterns for dashboards</a>
+          </p>
 
-            </form>
-        </aside>
-        
-        <footer>
-            <p>© 2026 Frontend Mastery. Built by Alaa Hamada.</p>
-        </footer>
+          <figure>
+            <img
+              src="assets/q2.png"
+              alt="CSS3 logo representing modern web styling"
+              width="300"
+              height="200"
+              loading="lazy"
+            />
+            <figcaption>CSS Grid enables structured dashboard layouts.</figcaption>
+          </figure>
+        </article>
+      </section>
 
-    </main>
+      <aside class="sidebar" aria-label="Sidebar">
+        <h3>About the author</h3>
+
+        <ul>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JS</a></li>
+          <li><a href="#">React</a></li>
+        </ul>
+
+        <form action="#" method="post">
+          <h3>Newsletter</h3>
+
+          <label for="newsletter-email">Email</label>
+          <input id="newsletter-email" name="email" type="email" autocomplete="email" required />
+          
+
+          <button type="submit">Subscribe</button>
+        </form>
+      </aside>
+
+    </div>
+
+    <!-- Popular posts -->
+    <section aria-labelledby="popular-posts-title">
+      <h2 id="popular-posts-title">Popular Posts</h2>
+
+      <ol>
+        <li><a href="#">Building Accessible Forms in HTML</a></li>
+        <li><a href="#">Modern CSS Layout with Grid and Flexbox</a></li>
+        <li><a href="#">Understanding JavaScript Event Delegation</a></li>
+      </ol>
+    </section>
+
+    <!-- Table -->
+    <section aria-labelledby="upcoming-topics-title">
+      <h2 id="upcoming-topics-title">Upcoming Topics</h2>
+
+      <table>
+        <caption>Frontend Learning Roadmap – Next Articles</caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Focus Area</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Week 4</th>
+            <td>Responsive Design Patterns</td>
+            <td>Mobile-first layouts</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Week 5</th>
+            <td>Advanced JavaScript Functions</td>
+            <td>Closures &amp; Scope</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Week 6</th>
+            <td>Intro to React</td>
+            <td>Components &amp; State</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Frontend Mastery. Built by Alaa Hamada.</p>
+  </footer>
 </body>
 </html>
